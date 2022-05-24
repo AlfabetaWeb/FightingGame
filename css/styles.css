@@ -1,0 +1,30 @@
+body {
+
+    height: 100vh; /*Establecemos la altura máxima de la web*/
+
+    margin: 0;    /*Establecemos que el punto de inicio de lectura es 0,0*/
+    padding: 0;
+
+    background-color: gray;  /*Establecemos el color de fondo*/
+
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+#main{        /*Establecemos la superficie del tapete de juego*/
+    
+    height: 40em;
+    width: 80em;
+    border-radius: 2em 2em 2em 2em;
+    box-shadow: 2em;
+    border-style: dashed;
+    border-color: aqua;
+    background-color: green;
+
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: row;
+}
