@@ -1,5 +1,4 @@
 body {
-
     height: 100vh; /*Establecemos la altura máxima de la web*/
 
     margin: 0;    /*Establecemos que el punto de inicio de lectura es 0,0*/
@@ -12,8 +11,7 @@ body {
     justify-content: center;
 }
 
-#main{        /*Establecemos la superficie del tapete de juego*/
-    
+#main{        /*Establecemos la superficie del tapete de juego*/    
     height: 40em;
     width: 80em;
     border-radius: 2em 2em 2em 2em;
@@ -29,24 +27,22 @@ body {
     flex-direction: row;
 }
 
-
-
-
 #screenBoard1 {
-    height: 100vh;
-    width: 100vw;
+    height: 38em;
+    width: 78em;
+    border-radius: 2em 2em 2em 2em;
 
     background-color: red;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #screenBoard2 {
-    height: 100vh;
-    width: 100vw;
+    height: 38em;
+    width: 78em;
+    border-radius: 2em 2em 2em 2em;
 
     background-color: orange;
 
@@ -56,82 +52,99 @@ body {
 }
 
 #screenBoard3 {
-    height: 100vh;
-    width: 100vw;
+    height: 38em;
+    width: 78em;
+    border-radius: 2em 2em 2em 2em;
 
     background-color: yellow;
 
     display: none;
     align-items: center;
     flex-direction: row !important;
-    justify-content: center;
-   
-
+    justify-content: center;  
 }
 
 #screenBoard4 {
-    height: 100vh;
-    width: 100vw;
+    height: 38em;
+    width: 78em;
+    border-radius: 2em 2em 2em 2em;
 
     background-color: green;
 
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 #screenBoard5 {
-    height: 100vh;
-    width: 100vw;
+    height: 38em;
+    width: 78em;
+    border-radius: 2em 2em 2em 2em;
 
     background-color: blue;
 
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 #screenBoard6 {
-    height: 100vh;
-    width: 100vw;
+    height: 38em;
+    width: 78em;
+    border-radius: 2em 2em 2em 2em;
 
     background-color: indigo;
 
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 #screenBoard7 {
-    height: 100vh;
-    width: 100vw;
+    height: 38em;
+    width: 78em;
+    border-radius: 2em 2em 2em 2em;
 
     background-color: violet;
 
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.logo {
-
-    height: 15em;
-
-    width: 27em;
+.logo {   /*imagem que clickas en primera pantalla*/
+    height: 25em;
+    width: 25em;    
+    border-radius: 2em 2em 2em 2em;
 } 
 
-.padre {
-
+.warriors { /*contenedor de guerreros para seleccionar*/
     display: flex;
 
-    width: 50em;
+    height: 38em;
+    width: 78em;
+    /* border-radius: 2em 2em 2em 2em; */
+
+    /* width: 50em; */
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;    
+}
+
+.warrior { /*guerreros para seleccionar*/    /*REVISAR MEDIDA*/
+    height: 10em;
+    width: 5em;
+    /* padding: 2em; */
+}
+ 
+/******************************************************/
+.chosenWarriors  {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
     align-items: center;
-    
 }
-
-.foto {
-    height: 8em;
-
-    padding: 2em;
-}
-
 .fotoVersus {
-
     height: 10em;
 
 }
@@ -143,9 +156,3 @@ body {
     align-items: center;
 }
 
-.padreTres  {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: center;
-    align-items: center;
-}

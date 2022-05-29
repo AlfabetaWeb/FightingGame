@@ -15,10 +15,11 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet"/> <!--Link to CSS styles-->
 </head>
 <body>
-    <div class="container-fluid" id="main"><!--Superficie del juego-->
-        <div id="screenBoard1"><img class="logo" src="img/logo.png" alt="logoAncientWarrior" onclick="screenSwitch('screenBoard2')"></div>
-      
-      
+    <!--Superficie del juego-->
+    <div class="container-fluid" id="main">
+        <!--Inicio del juego-->
+        <div id="screenBoard1"><img class="logo" src="img/logo2.png" alt="logoAncientWarrior" onclick="screenSwitch('screenBoard2')"></div>            
+        <!--Elige un guerrero-->
         <div id="screenBoard2">
             <div class="warriors">
                 <div class="warrior" onclick="selecciona('1')"><img class="foto" src="img/warrior.png" alt="Warrior"></div>
@@ -29,8 +30,9 @@
                 <div class="warrior" onclick="selecciona('6')"><img class="foto" src="img/fireWarrior.png" alt="Fire Warrior"></div>
             </div>
         </div>
+        <!--Guerreros seleccionados-->
         <div id="screenBoard3" onclick="screenSwitch('screenBoard4')">
-            <div id="padreTres"></div>
+            <div id="chosenWarriors"></div>
         </div>
         <div id="screenBoard4" onclick="screenSwitch('screenBoard5')"></div>
         <div id="screenBoard5" onclick="screenSwitch('screenBoard6')"></div>

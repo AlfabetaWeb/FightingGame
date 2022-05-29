@@ -31,13 +31,11 @@ let warrior5 = new Warrior("ArcherWarrior",100,100);
 let warrior6 = new Warrior("FireWarrior",100,100);
 
 //Diccionario de JS
-
-let allCars = {
+let allWarriors = {
     "1": warrior1,
     "2": warrior2,
     "3": warrior3,
     "4": warrior4,
     "5": warrior5,
     "6": warrior6
-
 }
