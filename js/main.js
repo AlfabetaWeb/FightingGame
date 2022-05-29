@@ -1,12 +1,13 @@
+
 let players = [];
 
 let vistaVersus = document.getElementById("chosenWarriors");
 
-const screenSwitch = (pantallaDestino) => {
+const screenSwitch = (pantallaDestino) => { //FUNCIÓN PARA CAMBIAR DE PANTALLA---FUNCIONA
     let destino = document.getElementById(pantallaDestino);
     destino.style.display = "flex";
 
-    let arrayPantallas = ["screenBoard1","screenBoard2","screenBoard3","screenBoard4","screenBoard5"];
+    let arrayPantallas = ["screenBoard1","screenBoard2","screenBoard3","screenBoard4","screenBoard5","screenBoard6","screenBoard7"];
 
     for(let screenBoard of arrayPantallas){
         if(screenBoard != pantallaDestino){
@@ -20,7 +21,7 @@ const selecciona = (fighter) => {
         //Diccionario de js
         players.push(allWarriors[fighter]);
         console.log(players);
-        //Una vez hemos introducido el coche en el array...
+        //Una vez hemos introducido el guerrero en el array...
         //comprobamos si la longitud del array es 2. 
         //Eso significaría que ya tenemos los dos GUERREROS y que hay que cambiar de pantalla
 

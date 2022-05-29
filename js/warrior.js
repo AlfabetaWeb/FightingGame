@@ -1,8 +1,6 @@
 
 //Descripción de la clase warrior
-
 class Warrior {
-
     constructor(name,strenght,speed){
         this.name = name;
         this.strenght = strenght;
@@ -10,19 +8,14 @@ class Warrior {
                
         this.strenght = 0;
         this.speed = 0;
-
     };
 
     // acelerar(){
-
     //     this.metros = (this.velocidad * this.peso) + 20;
-
     // };
-
 };
 
 //Instanciar
-
 let warrior1 = new Warrior("Warrior",100,100);
 let warrior2 = new Warrior("StickWarrior",100,100);
 let warrior3 = new Warrior("SpearWarrior",100,100);

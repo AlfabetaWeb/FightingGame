@@ -122,19 +122,27 @@ body {
     display: flex;
 
     height: 38em;
-    width: 78em;
-    /* border-radius: 2em 2em 2em 2em; */
+    width: 80em;
 
-    /* width: 50em; */
     flex-direction: row;
     justify-content: space-around;
     align-items: center;    
 }
 
-.warrior { /*guerreros para seleccionar*/    /*REVISAR MEDIDA*/
-    height: 10em;
-    width: 5em;
-    /* padding: 2em; */
+.warrior { /*guerreros para seleccionar*/    
+    /* height: 12em;
+    width: 6em;    */
+}
+
+.pic {
+    height: 11em;
+    width: 10em;
+  
+    border-radius: 2em 2em 2em 2em;
+
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
 }
  
 /******************************************************/

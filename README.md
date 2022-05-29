@@ -1,0 +1,40 @@
+
+/***DESCRIPCIÓN DE ELEMENTOS***/
+
+/*INDEX (HTML)*/
+
+CLASSES
+- container-fluid => Superficie del juego
+- logo => Imagen de inicio para arrancar el juego
+- warriors => Contiene a todos los guerreros
+- pic => imagenes de cada uno de los guerreros
+
+ID
+- main => Superficie del juego
+- screenBoard1 => Pantalla1
+- screenBoard2 => Pantalla2
+- screenBoard3 => Pantalla3
+- screenBoard4 => Pantalla4
+- screenBoard5 => Pantalla5
+- screenBoard6 => Pantalla6
+- screenBoard7 => Pantalla7
+- chosenWarrior => Guerreros elegidos para el combate
+
+/*WARRIOR (JS)*/
+
+CLASSES
+- warrior => clase a la que corresponden los elementos guerreros
+
+ID
+-
+
+/*MAIN (JS)*/
+
+ELEMENTS
+-
+
+CLASSES
+-
+
+ID
+-
