@@ -28,3 +28,124 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+
+
+
+#screenBoard1 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#screenBoard2 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: orange;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#screenBoard3 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: yellow;
+
+    display: none;
+    align-items: center;
+    flex-direction: row !important;
+    justify-content: center;
+   
+
+}
+
+#screenBoard4 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: green;
+
+    display: none;
+}
+
+#screenBoard5 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: blue;
+
+    display: none;
+}
+
+#screenBoard6 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: indigo;
+
+    display: none;
+}
+
+#screenBoard7 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: violet;
+
+    display: none;
+}
+
+
+.logo {
+
+    height: 15em;
+
+    width: 27em;
+} 
+
+.padre {
+
+    display: flex;
+
+    width: 50em;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.foto {
+    height: 8em;
+
+    padding: 2em;
+}
+
+.fotoVersus {
+
+    height: 10em;
+
+}
+
+.hijoVersus {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.padreTres  {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
