@@ -1,4 +1,8 @@
 
+
+/*DESCRIPCIÓN*/
+Project created for the Bootcamp - Full Stack Developer at GeeksHubs Academy: Create a SPA for a game using OOP. The player can choose among a minimum of four diferent fighters that combat with several options (hit, defend, etc)). Display must show points and  damage . Five minimum views (start, select player, chosen player, combat, winner)). Use HTML5, CSS3, JS.
+
 /***DESCRIPCIÓN DE ELEMENTOS***/
 
 /*INDEX (HTML)*/
@@ -8,6 +12,7 @@ CLASSES
 - logo => Imagen de inicio para arrancar el juego
 - warriors => Contiene a todos los guerreros
 - pic => imagenes de cada uno de los guerreros
+- showWarriors => muestra los guerreros seleccionados
 
 ID
 - main => Superficie del juego

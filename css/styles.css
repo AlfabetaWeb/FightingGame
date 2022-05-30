@@ -155,6 +155,12 @@ p {
     align-items: center;  
 }
  
+.showWarriors  {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;   
+}
 .chosenWarriors  {
     display: flex;
     flex-direction: row !important;
@@ -164,9 +170,14 @@ p {
 .logoVersus {
     height: 10em;
     width: 10em;
+    border-radius: 2em 2em 2em 2em;
 }
 
 .chosenVersus {
+    height: 20em;
+    width: 20em;
+    border-radius: 2em 2em 2em 2em;
+
     display: flex;
     flex-direction: row !important;
     justify-content: center;
