@@ -23,17 +23,20 @@ const selecciona = (fighter) => {
         console.log(players);
         //Una vez hemos introducido el guerrero en el array...
         //comprobamos si la longitud del array es 2. 
-        //Eso significaría que ya tenemos los dos GUERREROS y que hay que cambiar de pantalla
+        //Eso significaría que ya tenemos los dos GUERREROS y que hay que cambiar de pantalla ---- HASTA AQUÍ FUNCIONA
 
         if(players.length === 2){
             setTimeout(()=>{
-                //Diseñamos el contenido de la pantalla3 antes de mostrarla dando el cambiazo
-                vistaVersus.innerHTML = `<div class='hijoVersus'><img class='fotoVersus' src='img/${players[0].name}.jpg' alt='Warrior1'></div><div class='hijo3'><img class='fotoVersus' src='img/logo.jpg'/><div class='hijoVersus'><img class='fotoVersus' src='img/${players[1].name}.jpg' alt='Warrior2'></div>`;
+                //Diseñamos el contenido de la pantalla3 antes de mostrarla dando el cambiazo con los dos guerreros selecionados    -----ESTO ES LO QUE FALLA
+                vistaVersus.innerHTML = `<div class='chosenVersus'><img class='chosenVersus' src='img/${players[0].name}.png' alt='Warrior1'></div>
+                <div class='chosenVersus'><img class='logoVersus' src='img/logo.jpg'/></div>  
+                <div class='chosenVersus'><img class='chosenVersus' src='img/${players[1].name}.png' alt='Warrior2'></div>`;
+                
                 screenSwitch("screenBoard3");
 
                 setTimeout(()=>{
                     screenSwitch("screenBoard4");
-                },2000);
+                },10000);
             },500);
         }
     }      

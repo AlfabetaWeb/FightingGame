@@ -15,13 +15,14 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet"/> <!--Link to CSS styles-->  
 </head>
 <body>
-    <!--Superficie del juego-->
+    <!--GAME BOARD-->
     <div class="container-fluid" id="main">
-        <!--Inicio del juego-->
+        <!--START GAME-->
         <div id="screenBoard1"><img class="logo" src="img/logo2.png" alt="logoAncientWarrior" onclick="screenSwitch('screenBoard2')"></div>            
-        <!--Elige un guerrero-->
+        <!--CHOOSE TWO WARRIORS-->
         <div id="screenBoard2">
-            <div class="warriors">
+            <p>Choose two warriors</p> 
+            <div class="warriors">               
                 <div class="warrior" onclick="selecciona('1')"><img class="pic" src="img/warrior.png" alt="Warrior"></div>
                 <div class="warrior" onclick="selecciona('2')"><img class="pic" src="img/stickWarrior.png" alt="Stick Warrior"></div>
                 <div class="warrior" onclick="selecciona('3')"><img class="pic" src="img/spearWarrior.png" alt="Spear Warrior"></div>
@@ -30,10 +31,11 @@
                 <div class="warrior" onclick="selecciona('6')"><img class="pic" src="img/fireWarrior.png" alt="Fire Warrior"></div>
             </div>
         </div>
-        <!--Guerreros seleccionados-->
+        <!--CHOSEN WARRIORS-->
         <div id="screenBoard3" onclick="screenSwitch('screenBoard4')">
             <div id="chosenWarriors"></div>
         </div>
+
 
         <div id="screenBoard4" onclick="screenSwitch('screenBoard5')"></div>
         <div id="screenBoard5" onclick="screenSwitch('screenBoard6')"></div>

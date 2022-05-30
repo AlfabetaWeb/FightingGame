@@ -49,6 +49,7 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #screenBoard3 {
@@ -118,6 +119,15 @@ body {
     border-radius: 2em 2em 2em 2em;
 } 
 
+p {                          
+    color:red;
+    font-weight: bold;
+    font-size: 5em;
+
+    /* margin: 1em;  */
+    padding-top: 1em;    
+}
+
 .warriors { /*contenedor de guerreros para seleccionar*/
     display: flex;
 
@@ -129,10 +139,10 @@ body {
     align-items: center;    
 }
 
-.warrior { /*guerreros para seleccionar*/    
-    /* height: 12em;
-    width: 6em;    */
-}
+/* .warrior { guerreros para seleccionar    
+        height: 12em;
+        width: 6em;    
+} */
 
 .pic {
     height: 11em;
@@ -145,19 +155,18 @@ body {
     align-items: center;  
 }
  
-/******************************************************/
 .chosenWarriors  {
     display: flex;
     flex-direction: row !important;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
 }
-.fotoVersus {
+.logoVersus {
     height: 10em;
-
+    width: 10em;
 }
 
-.hijoVersus {
+.chosenVersus {
     display: flex;
     flex-direction: row !important;
     justify-content: center;
