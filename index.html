@@ -36,9 +36,38 @@
             <div class="showWarriors" id="chosenWarriors"></div>
         </div>
 
+        <!--COMBAT-->
+        <div id="screenBoard4">   <!-- onclick="screenSwitch('screenBoard5')"-->
+            <div class="combat">  <!--guerreros que combaten y signo de batalla -->
+                <div class="actionCombat"> <!--BATALLA-->               
+                    <!--DAVID-->                        
+                            <div class="hijoScreen4 screen4Car">
+                                <div id="warriorLeft">
+                                </div>
+                            </div>
+                            <div class="hijoScreen4 screen4Central">
+                                <img class="imgPow" onclick="play()" src="img/pow.png" alt="Pow"/>
+                            </div>
+                            <div class="hijoScreen4 screen4Car">
+                                <div id="warriorRight">
+                                </div>
+                            </div>                        
+                    <!---->
+                </div>
 
-        <div id="screenBoard4" onclick="screenSwitch('screenBoard5')"></div>
-        <div id="screenBoard5" onclick="screenSwitch('screenBoard6')"></div>
+            
+                <div >  <!--FONDO-->
+                    <img class="combatBG" src="img/dinos.png" alt="Battlefield">
+                </div>
+            </div>          
+
+        </div>
+
+
+        <div id="screenBoard5" onclick="clean()">
+            <div id="winnerIs"></div>
+        </div>
+
         <div id="screenBoard6" onclick="screenSwitch('screenBoard7')"></div>
         <div id="screenBoard7" onclick="screenSwitch('screenBoard1')"></div>
 

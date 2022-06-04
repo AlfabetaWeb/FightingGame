@@ -8,11 +8,22 @@ class Warrior {
                
         this.strenght = 0;
         this.speed = 0;
+
+        this.blow = 0;  //golpe ejecutado
     };
 
-    // acelerar(){
-    //     this.metros = (this.velocidad * this.peso) + 20;
-    // };
+    //Funciones que ejecuta esta clase
+    hit(){  //Golpea al otro guerrero
+        this.blow = Math.floor(this.blow + (this.strenght / this.speed) + 10);
+    };
+
+    advance(){  //Avanza hacia su rival
+
+    };
+
+    back(){  //retrocede para esquivar un golpe
+
+    };
 };
 
 //Instanciar

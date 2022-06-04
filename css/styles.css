@@ -184,3 +184,38 @@ p {
     align-items: center;
 }
 
+.combat´{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.actionCombat{
+    position: absolute; 
+    
+    height:36em;
+    width:78em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPow {
+    height: 10em;
+    width: 10em;
+    border-radius: 2em 2em 2em 2em;
+}
+.combatBG {
+    height: 38em;
+    width: 78em;
+    border-radius: 2em 2em 2em 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
