@@ -14,16 +14,16 @@ class Warrior {
 
     //Funciones que ejecuta esta clase
     hit(){  //Golpea al otro guerrero
-        this.blow = Math.floor(this.blow + (this.strenght / this.speed) + 10);
+        this.blow = Math.floor(this.blow + (this.strenght * this.speed) + 10);
     };
 
-    advance(){  //Avanza hacia su rival
+   // advance(){  //Avanza hacia su rival
 
-    };
+    //};
 
-    back(){  //retrocede para esquivar un golpe
+   // back(){  //retrocede para esquivar un golpe
 
-    };
+   // };
 };
 
 //Instanciar

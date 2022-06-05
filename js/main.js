@@ -11,7 +11,7 @@ let blowLeft;
 let blowRight;
 let winnerIs = document.getElementById("winnerIs");
 
-const screenSwitch = (pantallaDestino) => { //FUNCIÓN PARA CAMBIAR DE PANTALLA---FUNCIONA
+const screenSwitch = (pantallaDestino) => { 
     let destino = document.getElementById(pantallaDestino);
     destino.style.display = "flex";
 
@@ -26,16 +26,14 @@ const screenSwitch = (pantallaDestino) => { //FUNCIÓN PARA CAMBIAR DE PANTALLA-
 
 const select = (fighter) => {  
     if(players.length < 2){
-        //Diccionario de js
+        //JS dictionary
         players.push(allWarriors[fighter]);
         console.log(players);
-        //Una vez hemos introducido el guerrero en el array...
-        //comprobamos si la longitud del array es 2. 
-        //Eso significaría que ya tenemos los dos GUERREROS y que hay que cambiar de pantalla 
+        //Set two warriors in arrays and check it so you can change screen
 
         if(players.length === 2){
             setTimeout(()=>{
-                //Diseñamos el contenido de la pantalla3 antes de mostrarla dando el cambiazo con los dos guerreros selecionados    -----ESTO ES LO QUE FALLA
+                //Set next screen view before sending player data
                 vistaVersus.innerHTML = `<div class='chosenVersus'><img class='chosenVersus' src='img/${players[0].name}.png' alt='Warrior1'></div>
                 <div class='chosenVersus'><img class='logoVersus' src='img/logo.jpg'/></div>  
                 <div class='chosenVersus'><img class='chosenVersus' src='img/${players[1].name}.png' alt='Warrior2'></div>`;
@@ -43,7 +41,6 @@ const select = (fighter) => {
                 screenSwitch("screenBoard3");
 
                 setTimeout(()=>{
-
                     warriorLeft.innerHTML = `<div><img class='warriorFight' src='img/${players[0].name}.png'/></div>
                     <div>${players[0].name}</div>
                     <div id='blowLeft'>${players[0].blow}</div>`;
@@ -60,12 +57,9 @@ const select = (fighter) => {
         }
     }      
 };
-// --- HASTA AQUÍ FUNCIONA
 
-const play = () => {   //función de la peleaa en pantalla 4  --ERROR EN EL CÁLCULO NUMERICO
-
+const play = () => {   //Combat action
     let random = Math.round(Math.random());
-
     players[random].hit();
 
     if(players[random].blow >= 300){
