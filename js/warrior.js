@@ -27,12 +27,12 @@ class Warrior {
 };
 
 //Instanciar
-let warrior1 = new Warrior("Warrior",100,100);
-let warrior2 = new Warrior("StickWarrior",100,100);
-let warrior3 = new Warrior("SpearWarrior",100,100);
-let warrior4 = new Warrior("AxeWarrior",100,100);
-let warrior5 = new Warrior("ArcherWarrior",100,100);
-let warrior6 = new Warrior("FireWarrior",100,100);
+let warrior1 = new Warrior("Warrior",100,150);
+let warrior2 = new Warrior("StickWarrior",110,140);
+let warrior3 = new Warrior("SpearWarrior",120,130);
+let warrior4 = new Warrior("AxeWarrior",130,120);
+let warrior5 = new Warrior("ArcherWarrior",140,110);
+let warrior6 = new Warrior("FireWarrior",150,100);
 
 //Diccionario de JS
 let allWarriors = {

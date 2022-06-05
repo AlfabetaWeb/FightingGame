@@ -1,24 +1,21 @@
 body {
-    height: 100vh; /*Establecemos la altura máxima de la web*/
-
-    margin: 0;    /*Establecemos que el punto de inicio de lectura es 0,0*/
+    height: 100vh; 
+    margin: 0;  
     padding: 0;
-
-    background-color: gray;  /*Establecemos el color de fondo*/
-
+    background-color: white;  
     display: flex;  
     align-items: center;
     justify-content: center;
 }
 
-#main{        /*Establecemos la superficie del tapete de juego*/    
+#main{        /*Set board view*/    
     height: 40em;
     width: 80em;
     border-radius: 2em 2em 2em 2em;
     box-shadow: 2em;
     border-style: dashed;
     border-color: darkblue;
-    background-color: lightseagreen;
+    background-color: lightblue;
 
     align-items: center;
     justify-content: center;
@@ -113,9 +110,9 @@ body {
     align-items: center;
 }
 
-.logo {   /*imagem que clickas en primera pantalla*/
-    height: 25em;
-    width: 25em;    
+.logo {   /*Intro image for starting the game*/
+    height: 36em;
+    width: 36em;    
     border-radius: 2em 2em 2em 2em;
 } 
 
@@ -123,12 +120,10 @@ p {
     color:red;
     font-weight: bold;
     font-size: 5em;
-
-    /* margin: 1em;  */
     padding-top: 1em;    
 }
 
-.warriors { /*contenedor de guerreros para seleccionar*/
+.warriors { /*optional warriors container*/
     display: flex;
 
     height: 38em;
@@ -138,11 +133,6 @@ p {
     justify-content: space-around;
     align-items: center;    
 }
-
-/* .warrior { guerreros para seleccionar    
-        height: 12em;
-        width: 6em;    
-} */
 
 .pic {
     height: 11em;
@@ -161,12 +151,14 @@ p {
     justify-content: center;
     align-items: center;   
 }
+
 .chosenWarriors  {
     display: flex;
     flex-direction: row !important;
     justify-content: center;
     align-items: center;   
 }
+
 .logoVersus {
     height: 10em;
     width: 10em;

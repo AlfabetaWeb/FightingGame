@@ -24,7 +24,7 @@ const screenSwitch = (pantallaDestino) => { //FUNCIÓN PARA CAMBIAR DE PANTALLA-
     };   
 };
 
-const selecciona = (fighter) => {  
+const select = (fighter) => {  
     if(players.length < 2){
         //Diccionario de js
         players.push(allWarriors[fighter]);
@@ -68,7 +68,7 @@ const play = () => {   //función de la peleaa en pantalla 4  --ERROR EN EL CÁL
 
     players[random].hit();
 
-    if(players[random].blow >= 200){
+    if(players[random].blow >= 300){
         setTimeout(()=>{
             winnerIs.innerHTML = `${players[random].name}`;
             screenSwitch("screenBoard5");

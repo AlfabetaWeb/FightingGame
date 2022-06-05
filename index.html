@@ -23,12 +23,12 @@
         <div id="screenBoard2">
             <p>Choose two warriors</p> 
             <div class="warriors">               
-                <div class="warrior" onclick="selecciona('1')"><img class="pic" src="img/warrior.png" alt="Warrior"></div>
-                <div class="warrior" onclick="selecciona('2')"><img class="pic" src="img/stickWarrior.png" alt="Stick Warrior"></div>
-                <div class="warrior" onclick="selecciona('3')"><img class="pic" src="img/spearWarrior.png" alt="Spear Warrior"></div>
-                <div class="warrior" onclick="selecciona('4')"><img class="pic" src="img/axeWarrior.png" alt="Axe Warrior"></div>
-                <div class="warrior" onclick="selecciona('5')"><img class="pic" src="img/archerWarrior.png" alt="Archer Warrior"></div>
-                <div class="warrior" onclick="selecciona('6')"><img class="pic" src="img/fireWarrior.png" alt="Fire Warrior"></div>
+                <div class="warrior" onclick="select('1')"><img class="pic" src="img/warrior.png" alt="Warrior"></div>
+                <div class="warrior" onclick="select('2')"><img class="pic" src="img/stickWarrior.png" alt="Stick Warrior"></div>
+                <div class="warrior" onclick="select('3')"><img class="pic" src="img/spearWarrior.png" alt="Spear Warrior"></div>
+                <div class="warrior" onclick="select('4')"><img class="pic" src="img/axeWarrior.png" alt="Axe Warrior"></div>
+                <div class="warrior" onclick="select('5')"><img class="pic" src="img/archerWarrior.png" alt="Archer Warrior"></div>
+                <div class="warrior" onclick="select('6')"><img class="pic" src="img/fireWarrior.png" alt="Fire Warrior"></div>
             </div>
         </div>
         <!--CHOSEN WARRIORS-->
@@ -37,43 +37,36 @@
         </div>
 
         <!--COMBAT-->
-        <div id="screenBoard4">   <!-- onclick="screenSwitch('screenBoard5')"-->
-            <div class="combat">  <!--guerreros que combaten y signo de batalla -->
-                <div class="actionCombat"> <!--BATALLA-->               
-                    <!--DAVID-->                        
-                            <div class="hijoScreen4 screen4Car">
-                                <div id="warriorLeft">
-                                </div>
-                            </div>
-                            <div class="hijoScreen4 screen4Central">
-                                <img class="imgPow" onclick="play()" src="img/pow.png" alt="Pow"/>
-                            </div>
-                            <div class="hijoScreen4 screen4Car">
-                                <div id="warriorRight">
-                                </div>
-                            </div>                        
-                    <!---->
-                </div>
-
-            
-                <div >  <!--FONDO-->
+        <div id="screenBoard4">   
+            <div class="combat">  <!--Chosen warriors and battle sign -->
+                <div class="actionCombat"> <!--BATTLE-->
+                    <div class="warriorPositionLeft">
+                        <div id="warriorLeft"></div>
+                    </div>
+                    <div class="combatPosition">
+                        <img class="imgPow" onclick="play()" src="img/pow.png" alt="Pow"/>
+                    </div>
+                    <div class="warriorPositionRight">
+                        <div id="warriorRight"></div>
+                    </div> 
+                </div>            
+                <div >  <!--background-->
                     <img class="combatBG" src="img/dinos.png" alt="Battlefield">
                 </div>
-            </div>          
-
+            </div> 
         </div>
-
-
+        
         <div id="screenBoard5" onclick="clean()">
             <div id="winnerIs"></div>
         </div>
-
-        <div id="screenBoard6" onclick="screenSwitch('screenBoard7')"></div>
-        <div id="screenBoard7" onclick="screenSwitch('screenBoard1')"></div>
-
+        <div id="screenBoard6" onclick="screenSwitch('screenBoard7')">
+            <p>GAME OVER</p> 
+        </div>
+        <div id="screenBoard7" onclick="screenSwitch('screenBoard1')">
+            <p>START OVER?</p> 
+        </div>
     </div>
-    <script src="js/warrior.js"></script> <!--Link to JS class-->
-    <!--<script src="js/env.js"></script>--> <!--Link to JS environment--> <!--NOT USED-->
+    <script src="js/warrior.js"></script> <!--Link to JS class-->  
 	<script src="js/main.js"></script> <!--Link to JS actions-->
 </body>
 </html>
